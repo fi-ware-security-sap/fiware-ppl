@@ -1,42 +1,37 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="FI-WARE  Data Handling GE - PPL : This is PPL, an implementation of FI-WARE Data Handling Generic Enabler, please check for more information: http://wiki.fi-ware.eu/" />
 
-  <title>FI-WARE  Data Handling GE - PPL</title>
-  <meta name="description" content="This is PPL, an implementation of FI-WARE Data Handling Generic Enabler, please check for more information: http://wiki.fi-ware.eu/plugins/FIWARE.OpenSpecification.Security.Data_Handling_Generic_Enabler">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FI-WARE  Data Handling GE - PPL</title>
+  </head>
 
-</head>
+  <body>
 
-<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/fi-ware-security-sap/fiware-ppl">View on GitHub</a>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">FI-WARE  Data Handling GE - PPL</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">This is PPL, an implementation of FI-WARE Data Handling Generic Enabler, please check for more information: http://wiki.fi-ware.eu/plugins/FIWARE.OpenSpecification.Security.Data_Handling_Generic_Enabler</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/fi-ware-security-sap/fiware-ppl/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/fi-ware-security-sap/fiware-ppl/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/fi-ware-security-sap/fiware-ppl" class="code">View FI-WARE  Data Handling GE - PPL on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h1>
+          <h1 id="project_title">FI-WARE  Data Handling GE - PPL</h1>
+          <h2 id="project_tagline">This is PPL, an implementation of FI-WARE Data Handling Generic Enabler, please check for more information: http://wiki.fi-ware.eu/</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/fi-ware-security-sap/fiware-ppl/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/fi-ware-security-sap/fiware-ppl/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a name="welcome-to-ppl-the-fi-ware-data-handling-ge-reference-implementation" class="anchor" href="#welcome-to-ppl-the-fi-ware-data-handling-ge-reference-implementation"><span class="octicon octicon-link"></span></a>Welcome to PPL, the FI-WARE Data Handling GE reference implementation.</h1>
 
 <p>This project hosts the source code of PPL. This code has been developed thanks to the support of the FI-WARE project, an initiative funded by the European Commission. Please refer to the <a href="http://www.fi-ware.org">FI-WARE website</a> for more information. </p>
@@ -71,26 +66,25 @@
 <code>
 http://datahdl.testbed.fi-ware.eu:8080/ppl-rest/
 </code>
-Execution log using cURL:
-`
- About to connect() to  port 8080(#0)</p>
+Execution log using cURL:</p>
 
-<ul>
-<li>  Trying ... connected</li>
-<li>Connected to  ( IP) port 9477 (#0)
+<pre><code> About to connect() to  port 8080(#0)
+*   Trying ... connected
+* Connected to  ( IP) port 9477 (#0)
 &gt; GET /api/pii HTTP/1.1
 &gt; User-Agent: curl/7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18
 &gt; Host: :8080
-&gt; Accept: <em>/</em>
+&gt; Accept: */*
 &gt; 
-left intact</li>
-<li>Closing connection #0
+ left intact
+* Closing connection #0
 [a list of  nodes, or nothing if no PIIs are inserted]
-`</li>
-</ul><h2>
+</code></pre>
+
+<h2>
 <a name="manuals" class="anchor" href="#manuals"><span class="octicon octicon-link"></span></a>Manuals</h2>
 
-<p>Please refer to the [Data Handling FI-WARE page)[<a href="http://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Materializing_Security_in_FI-WARE#Data_Handling_Generic_Enabler">http://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Materializing_Security_in_FI-WARE#Data_Handling_Generic_Enabler</a>] and especially to <a href="http://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Data_Handling_GE_-_User_and_Programmer_Guide">Data Handling User and Programmer Guide</a> for more information.</p>
+<p>Please refer to the <a href="http://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Materializing_Security_in_FI-WARE#Data_Handling_Generic_Enabler">Data Handling FI-WARE page</a> and especially to <a href="http://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Data_Handling_GE_-_User_and_Programmer_Guide">Data Handling User and Programmer Guide</a> for more information.</p>
 
 <h2>
 <a name="want-to-know-more" class="anchor" href="#want-to-know-more"><span class="octicon octicon-link"></span></a>Want to know more?</h2>
@@ -101,26 +95,18 @@ left intact</li>
 <a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
 
 <p>Slim Trabelsi, <a href="mailto:slim.trabelsi@sap.com">slim.trabelsi@sap.com</a></p>
-        </article>
-      </div>
+      </section>
     </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/fi-ware-security-sap" class="avatar"><img src="https://avatars3.githubusercontent.com/u/7431273?s=60" width="48" height="48"/></a> <a href="https://github.com/fi-ware-security-sap">fi-ware-security-sap</a> maintains <a href="https://github.com/fi-ware-security-sap/fiware-ppl">FI-WARE  Data Handling GE - PPL</a></p>
 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">FI-WARE  Data Handling GE - PPL maintained by <a href="https://github.com/fi-ware-security-sap">fi-ware-security-sap</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/fi-ware-security-sap/fiware-ppl/tarball/master" class="tar">tar</a><a href="https://github.com/fi-ware-security-sap/fiware-ppl/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+    
 
-  
-</body>
+  </body>
 </html>
